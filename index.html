@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CONSTRUCTION Grupa Projektowa | Artur Stawiarz</title>
+
+  <meta name="description" content="CONSTRUCTION Grupa Projektowa – kompleksowe projektowanie budynków, przyłączy i sieci. Obsługa formalna inwestycji. Bochnia, powiat bocheński, wielicki i brzeski." />
+
+  <style>
+    :root{
+      --primary:#1f2a33;
+      --accent:#9fa7ad;
+      --bg:#f5f6f7;
+      --text:#1d1d1d;
+    }
+
+    *{box-sizing:border-box}
+
+    body{
+      margin:0;
+      font-family:Segoe UI,Roboto,Arial,sans-serif;
+      color:var(--text);
+      background:var(--bg);
+      line-height:1.6;
+    }
+
+    header{
+      min-height:100vh;
+      background:
+        linear-gradient(rgba(255,255,255,0.92),rgba(255,255,255,0.92)),
+        url('tlo-szkic.svg');
+      background-size:cover;
+      background-position:center;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      padding:40px 20px;
+      text-align:center;
+    }
+
+    .hero{max-width:900px}
+
+    .logo{
+      max-width:260px;
+      margin-bottom:20px;
+    }
+
+    h1{
+      font-size:2.4rem;
+      margin:0;
+      color:var(--primary);
+    }
+
+    .subtitle{
+      margin:10px 0 30px;
+      color:#444;
+      font-size:1.1rem;
+    }
+
+    .personal{
+      font-size:0.95rem;
+    }
+
+    section{
+      padding:80px 20px;
+      background:#fff;
+    }
+
+    .container{
+      max-width:1100px;
+      margin:0 auto;
+    }
+
+    h2{
+      text-align:center;
+      color:var(--primary);
+      margin-bottom:50px;
+      font-size:2rem;
+    }
+
+    .services{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+      gap:30px;
+    }
+
+    .card{
+      background:#fafafa;
+      border-radius:14px;
+      padding:30px;
+      border:1px solid #e3e3e3;
+    }
+
+    form{
+      max-width:600px;
+      margin:0 auto;
+    }
+
+    input, textarea{
+      width:100%;
+      padding:12px;
+      margin-bottom:15px;
+      border-radius:8px;
+      border:1px solid #ccc;
+      font-size:0.95rem;
+      font-family:inherit;
+    }
+
+    button{
+      background:var(--primary);
+      color:#fff;
+      border:none;
+      padding:14px 24px;
+      border-radius:10px;
+      font-size:1rem;
+      cursor:pointer;
+    }
+
+    footer{
+      background:var(--primary);
+      color:#d0d4d8;
+      padding:50px 20px;
+      text-align:center;
+      font-size:0.9rem;
+    }
+
+    footer a{color:#d0d4d8}
+
+    @media(max-width:600px){
+      h1{font-size:1.9rem}
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="hero">
+    <img src="logo.png" alt="CONSTRUCTION Grupa Projektowa" class="logo" />
+    <h1>CONSTRUCTION Grupa Projektowa</h1>
+    <div class="subtitle">
+      Projektowanie • Formalności • Doradztwo techniczne
+    </div>
+    <div class="personal">
+      <strong>Artur Stawiarz</strong><br>
+      Tel. 604&nbsp;782&nbsp;725<br>
+      E-mail: constructiongrupaprojektowa@gmail.com<br>
+      Bochnia • powiat bocheński • wielicki • brzeski
+    </div>
+  </div>
+</header>
+
+<section>
+  <div class="container">
+    <h2>Dla kogo pracujemy</h2>
+    <div class="services">
+      <div class="card">
+        <h3>Klient indywidualny</h3>
+        <p>
+          Prowadzimy inwestora od pierwszego pomysłu aż po uzyskanie decyzji
+          administracyjnych. Tłumaczymy procedury i przejmujemy formalności.
+        </p>
+      </div>
+      <div class="card">
+        <h3>Deweloper / inwestor</h3>
+        <p>
+          Sprawna obsługa projektowa i formalna inwestycji wielorodzinnych
+          i usługowych – z naciskiem na terminy i optymalizację rozwiązań.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <h2>Zakres usług</h2>
+    <div class="services">
+      <div class="card">
+        <h3>Projektowanie budynków</h3>
+        <p>Budynki mieszkalne, usługowe i przemysłowe – projekty budowlane i wykonawcze.</p>
+      </div>
+      <div class="card">
+        <h3>Przyłącza i sieci</h3>
+        <p>Wod-kan, gaz, energia elektryczna, teletechnika.</p>
+      </div>
+      <div class="card">
+        <h3>Formalności</h3>
+        <p>Decyzje, uzgodnienia i pozwolenia – w imieniu inwestora.</p>
+      </div>
+      <div class="card">
+        <h3>Doradztwo techniczne</h3>
+        <p>Konsultacje projektowe i budowlane na każdym etapie inwestycji.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <h2>Formularz kontaktowy</h2>
+    <form action="https://formsubmit.co/constructiongrupaprojektowa@gmail.com" method="POST">
+      <input type="text" name="name" placeholder="Imię i nazwisko" required>
+      <input type="email" name="email" placeholder="Adres e-mail" required>
+      <textarea name="message" rows="6" placeholder="Treść wiadomości" required></textarea>
+
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_subject" value="Zapytanie ze strony internetowej">
+
+      <button type="submit">Wyślij wiadomość</button>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <p><strong>CONSTRUCTION Grupa Projektowa Artur Stawiarz</strong></p>
+  <p>NIP: 868-174-29-41 | REGON: 121435141</p>
+  <p>Bochnia</p>
+  <p>© 2026 • Polityka prywatności / RODO</p>
+</footer>
+
+</body>
+</html>
